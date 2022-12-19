@@ -317,13 +317,6 @@
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
-        
-    def handle_unverified_request
-        super
-        Devise.mappings.each_key do |key|
-        cookies.delete "remember_#{key}_token"
-        end
-    end
         function scrollFunction1() {
             let e = document.getElementById("el-producten");
             e.scrollIntoView({
